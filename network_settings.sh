@@ -70,3 +70,18 @@ echo "PID: $process_id"
 # sudo apt-get -y install codeblocks codeblocks-contrib
 # wait $process_id
 # echo -e "\033[42m\033-----------> Code Blocks Installation - Success"
+
+
+# echo -e "\033[42m\033-----------> Adobe Acropbat Reader"
+# # link: "https://linuxways.net/ubuntu/how-to-install-adobe-acrobat-reader-in-ubuntu-20-04/"
+# sudo apt-get update
+# wait $process_id
+# sudo dpkg --add-architecture i386
+# wait $process_id
+# sudo apt-get -y install libxml2:i386 libcanberra-gtk-module:i386 gtk2-engines-murrine:i386 libatk-adaptor:i386
+# wait $process_id
+# wget -O ~/adobe.deb ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i386linux_enu.deb
+# wait $process_id
+# sudo dpkg -i /home/tsvs/adobe.deb
+# wait $process_id
+# echo -e "\033[42m\033-----------> Adobe Acropbat Reader - Success"

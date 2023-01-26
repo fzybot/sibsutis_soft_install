@@ -8,6 +8,7 @@
 - установка основных пакетов Qt5; ✅
 - установка Libre Office 6.1; ✅
 - установка CodeBlocks; ✅
+- установка Adobe Acrobat Reader; ✅
 ## Запуск
 
 ```sh
