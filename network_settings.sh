@@ -17,7 +17,11 @@ echo "PID: $process_id"
 # sudo apt update
 # wait $process_id
 
-# echo "----------->"
+# echo "-----------> Change layout changing into alt+shift"
+#gsettings set org.gnome.desktop.input-sources xkb-options "['grp:alt_shift_toggle']"
+# echo "-----------> Change layout changing into alt+shift - Success"
+
+# echo "-----------> Install SSH"
 # echo "sudo apt-get install ssh"
 # echo "PID: $process_id"
 # sudo apt-get -y install ssh
@@ -27,6 +31,7 @@ echo "PID: $process_id"
 # echo "----------->"
 # echo "Status sshd"
 # systemctl status sshd
+# echo "-----------> Install SSH - Success"
 
 # echo -e "\033[42m\033-----------> Changing sources.list into Yandex sources.list"
 # sudo cp -f sources.list /etc/apt/sources.list
