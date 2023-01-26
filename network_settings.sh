@@ -117,3 +117,21 @@ echo "PID: $process_id"
 # sudo apt-get -y install gimp-plugin-registry
 # wait $process_id
 # echo -e "\033[42m\033-----------> GIMP - Success"
+
+
+
+
+
+
+
+
+
+
+
+# echo -e "\033[42m\033-----------> Cisco Packet Tracer"
+# # ВАЖНО! необходимо иметь в каталоге файл CiscoPacketTracer_820_Ubuntu_64bit.deb
+# sudo chmod 777 CiscoPacketTracer_820_Ubuntu_64bit.deb
+# wait $process_id
+# sudo apt -y install ./CiscoPacketTracer_820_Ubuntu_64bit.deb
+# wait $process_id
+# echo -e "\033[42m\033-----------> Cisco Packet Tracer - Success"
