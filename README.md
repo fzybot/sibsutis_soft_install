@@ -7,6 +7,7 @@
 - замена зеркал Ubuntu на зеркала Yandex (/etc/apt/sources.list); ✅
 - установка основных пакетов Qt5; ✅
 - установка Libre Office 6.1; ✅
+- установка CodeBlocks; ✅
 ## Запуск
 
 ```sh
