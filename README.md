@@ -9,6 +9,9 @@
 - установка Libre Office 6.1; ✅
 - установка CodeBlocks; ✅
 - установка Adobe Acrobat Reader; ✅
+- установка VSCode; ✅
+- установка Python-PIP (2.7\3.8); ✅
+- установка Java-JDK; ✅
 ## Запуск
 
 ```sh

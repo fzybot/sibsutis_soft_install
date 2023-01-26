@@ -85,3 +85,27 @@ echo "PID: $process_id"
 # sudo dpkg -i /home/tsvs/adobe.deb
 # wait $process_id
 # echo -e "\033[42m\033-----------> Adobe Acropbat Reader - Success"
+
+# echo -e "\033[42m\033-----------> VSCode"
+# # link: "https://phoenixnap.com/kb/install-vscode-ubuntu"
+# sudo apt update
+# wait $process_id
+# sudo apt install software-properties-common apt-transport-https wget -y
+# wait $process_id
+# wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+# wait $process_id
+# sudo add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+# wait $process_id
+# sudo apt-get -y install code
+# wait $process_id
+# echo -e "\033[42m\033-----------> VSCode - Success"
+
+# echo -e "\033[42m\033-----------> Python-PIP"
+# sudo apt-get -y install python3-pip python-pip
+# wait $process_id
+# echo -e "\033[42m\033-----------> Python-PIP - Success"
+
+# echo -e "\033[42m\033-----------> Java-JDK"
+# sudo apt-get -y install default-jdk
+# wait $process_id
+# echo -e "\033[42m\033-----------> Java-JDK - Success"
