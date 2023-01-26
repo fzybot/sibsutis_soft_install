@@ -42,5 +42,12 @@ echo "PID: $process_id"
 # wait $process_id
 # sudo apt-get update
 # wait $process_id
-# echo -e "\033[42m\033-----------> Qt successfully installed"
+# echo -e "\033[42m\033-----------> Qt - Success"
 
+# echo -e "\033[42m\033-----------> Libre Office Installation"
+# sudo add-apt-repository -y ppa:libreoffice/ppa
+# sudo apt-get update
+# wait $process_id
+# sudo apt-get -y install libreoffice
+# wait $process_id
+# echo -e "\033[42m\033-----------> Libre Office Installation - Success"
