@@ -106,6 +106,14 @@ echo "PID: $process_id"
 # echo -e "\033[42m\033-----------> Python-PIP - Success"
 
 # echo -e "\033[42m\033-----------> Java-JDK"
+# # link: "https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04"
 # sudo apt-get -y install default-jdk
 # wait $process_id
 # echo -e "\033[42m\033-----------> Java-JDK - Success"
+
+# echo -e "\033[42m\033-----------> GIMP"
+# # link: "https://www.cyberciti.biz/faq/how-to-install-gimp-on-ubuntu-debian-linux/"
+# sudo apt-get -y install gimp
+# sudo apt-get -y install gimp-plugin-registry
+# wait $process_id
+# echo -e "\033[42m\033-----------> GIMP - Success"
