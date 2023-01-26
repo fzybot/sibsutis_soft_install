@@ -1,4 +1,7 @@
 #! /bin/bash
+# Если возникает ошибка, приведенная ниже, выполнить след команду из папки запуска "sed -i 's/\r$//' *"
+#-bash: ./network_settings.sh: /bin/bash^M: неверный интерпретатор: Нет такого файла или каталога
+
 
 process_id=$!
 echo "PID: $process_id"
@@ -18,6 +21,7 @@ echo "PID: $process_id"
 # wait $process_id
 
 # echo "-----------> Change layout changing into alt+shift"
+# # link: "https://qna.habr.com/q/526950"
 #gsettings set org.gnome.desktop.input-sources xkb-options "['grp:alt_shift_toggle']"
 # echo "-----------> Change layout changing into alt+shift - Success"
 
@@ -50,9 +54,19 @@ echo "PID: $process_id"
 # echo -e "\033[42m\033-----------> Qt - Success"
 
 # echo -e "\033[42m\033-----------> Libre Office Installation"
+# # link: "https://itdraft.ru/2018/08/16/kak-ustanovit-libreoffice-6-1-v-ubuntu-18-04-16-04/" 
 # sudo add-apt-repository -y ppa:libreoffice/ppa
 # sudo apt-get update
 # wait $process_id
 # sudo apt-get -y install libreoffice
 # wait $process_id
 # echo -e "\033[42m\033-----------> Libre Office Installation - Success"
+
+# echo -e "\033[42m\033-----------> Code Blocks Installation"
+# # link: "https://ubunlog.com/ru/como-instalar-codeblocks-en-ubuntu-18-04/" 
+# sudo add-apt-repository -y ppa:damien-moore/codeblocks-stable
+# sudo apt-get update
+# wait $process_id
+# sudo apt-get -y install codeblocks codeblocks-contrib
+# wait $process_id
+# echo -e "\033[42m\033-----------> Code Blocks Installation - Success"
