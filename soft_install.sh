@@ -7,8 +7,10 @@
 process_id=$!
 echo "PID: $process_id"
 
+echo "-----------> add Student user"
 sudo useradd -m student
 wait $process_id
+echo "-----------> enter Password for Student"
 sudo passwd student
 wait $process_id
 
