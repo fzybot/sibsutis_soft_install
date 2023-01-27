@@ -128,17 +128,22 @@ wait $process_id
 echo -e "\033[42m\033-----------> Git - Success"
 
 
-
-
-
-
-
-
-# УСТАНАВЛИВАТЬ ПОСЛЕДНИМИ
-echo -e "\033[42m\033-----------> Cisco Packet Tracer"
-# ВАЖНО! необходимо иметь в каталоге файл CiscoPacketTracer_820_Ubuntu_64bit.deb
-sudo chmod 777 CiscoPacketTracer_820_Ubuntu_64bit.deb
+echo -e "\033[42m\033-----------> Htop"
+sudo apt-get -y install htop
 wait $process_id
-sudo apt -y install ./CiscoPacketTracer_820_Ubuntu_64bit.deb
-wait $process_id
-echo -e "\033[42m\033-----------> Cisco Packet Tracer - Success"
+echo -e "\033[42m\033-----------> Htop - Success"
+
+
+
+
+
+
+
+# # УСТАНАВЛИВАТЬ ПОСЛЕДНИМИ
+# echo -e "\033[42m\033-----------> Cisco Packet Tracer"
+# # ВАЖНО! необходимо иметь в каталоге файл CiscoPacketTracer_820_Ubuntu_64bit.deb
+# sudo chmod 777 CiscoPacketTracer_820_Ubuntu_64bit.deb
+# wait $process_id
+# sudo apt -y install ./CiscoPacketTracer_820_Ubuntu_64bit.deb
+# wait $process_id
+# echo -e "\033[42m\033-----------> Cisco Packet Tracer - Success"
