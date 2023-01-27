@@ -122,7 +122,10 @@ sudo apt-get -y install gimp-plugin-registry
 wait $process_id
 echo -e "\033[42m\033-----------> GIMP - Success"
 
-
+echo -e "\033[42m\033-----------> Git"
+sudo apt-get -y install git
+wait $process_id
+echo -e "\033[42m\033-----------> Git - Success"
 
 
 
