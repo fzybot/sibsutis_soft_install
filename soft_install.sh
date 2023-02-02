@@ -42,7 +42,7 @@ sudo systemctl enable sshd
 echo "-----------> Install SSH - Success"
 
 echo -e "\033[42m\033-----------> Changing sources.list into Yandex sources.list"
-sudo cp -f sources.list /etc/apt/sources.list
+sudo cp -f ~/sibsutis_soft_install/sources.list /etc/apt/sources.list
 wait $process_id
 echo -e "\033[42m\033-----------> sources.list into Yandex sources.list is successfully changed"
 
@@ -139,6 +139,17 @@ wait $process_id
 sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb
 wait $process_id
 echo -e "\033[42m\033-----------> Google Chrome - Success"
+
+echo -e "-----------> set auto-shutdown timer for 19:30:00 every day"
+sudo cp -f ~/sibsutis_soft_install/systemd-poweroff.timer /etc/systemd/system/
+wait $process_id
+sudo systemctl start systemd-poweroff.timer
+wait $process_id
+sudo systemctl enable systemd-poweroff.timer
+wait $process_id
+echo -e "-----------> set auto-shutdown timer for 19:30:00 every day - is Success"
+
+
 
 
 
