@@ -133,7 +133,12 @@ sudo apt-get -y install htop
 wait $process_id
 echo -e "\033[42m\033-----------> Htop - Success"
 
-
+echo -e "\033[42m\033-----------> Google Chrome"
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wait $process_id
+sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb
+wait $process_id
+echo -e "\033[42m\033-----------> Google Chrome - Success"
 
 
 
