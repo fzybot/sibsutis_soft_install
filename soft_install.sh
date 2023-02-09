@@ -41,16 +41,16 @@ wait $process_id
 sudo systemctl enable sshd
 echo "-----------> Install SSH - Success"
 
-echo -e "\033[42m\033-----------> Changing sources.list into Yandex sources.list"
-sudo cp -f ~/sibsutis_soft_install/sources.list /etc/apt/sources.list
-wait $process_id
-echo -e "\033[42m\033-----------> sources.list into Yandex sources.list is successfully changed"
+# echo -e "\033[42m\033-----------> Changing sources.list into Yandex sources.list"
+# sudo cp -f ~/sibsutis_soft_install/sources.list /etc/apt/sources.list
+# wait $process_id
+# echo -e "\033[42m\033-----------> sources.list into Yandex sources.list is successfully changed"
 
 sudo apt-get update
 wait $process_id
 
 echo -e "\033[42m\033-----------> Qt"
-sudo apt-get -y install build-essential qtcreator mesa-common-dev qt5-default qt5-doc qt5-doc-html qtbase5-dev qtbase5-dev-tools qtbase5-doc qtbase5-doc-html qtbase5-examples libqt5charts5-dev  qtcharts5-doc qtcharts5-doc-html qtcharts5-examples 
+sudo apt -y install build-essential qtcreator mesa-common-dev qt5-qmake cmake qt5-doc qt5-doc-html qtbase5-dev qtbase5-dev-tools qtbase5-doc qtbase5-doc-html qtbase5-examples libqt5charts5-dev  qtcharts5-doc qtcharts5-doc-html qtcharts5-examples 
 # sudo apt-get -y installlibqt5datavisualization5-dev qtdatavisualization5-doc qtdatavisualization5-examples qtdatavisualization5-doc-html
 wait $process_id
 sudo apt-get update
@@ -149,17 +149,19 @@ sudo systemctl enable systemd-poweroff.timer
 wait $process_id
 echo -e "-----------> set auto-shutdown timer for 19:30:00 every day - is Success"
 
+echo -e "-----------> traceroute"
+sudo apt -y install traceroute
+wait $process_id
+echo -e "-----------> traceroute - is Success"
 
 
+echo -e "\033[42m\033-----------> Cisco Packet Tracer"
+# ВАЖНО! необходимо иметь в каталоге файл CiscoPacketTracer_820_Ubuntu_64bit.deb
+sudo chmod +x CiscoPacketTracer_820_Ubuntu_64bit.deb
+wait $process_id
+sudo dpkg -i CiscoPacketTracer_820_Ubuntu_64bit.deb
+wait $process_id
+sudo apt install -f
+wait $process_id
+echo -e "\033[42m\033-----------> Cisco Packet Tracer - Success"
 
-
-
-
-# # УСТАНАВЛИВАТЬ ПОСЛЕДНИМИ
-# echo -e "\033[42m\033-----------> Cisco Packet Tracer"
-# # ВАЖНО! необходимо иметь в каталоге файл CiscoPacketTracer_820_Ubuntu_64bit.deb
-# sudo chmod 777 CiscoPacketTracer_820_Ubuntu_64bit.deb
-# wait $process_id
-# sudo apt -y install ./CiscoPacketTracer_820_Ubuntu_64bit.deb
-# wait $process_id
-# echo -e "\033[42m\033-----------> Cisco Packet Tracer - Success"
