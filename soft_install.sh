@@ -165,3 +165,7 @@ sudo apt install -f
 wait $process_id
 echo -e "\033[42m\033-----------> Cisco Packet Tracer - Success"
 
+echo -e "\033[42m\033-----------> Virtual Box"
+sudo apt-get -y install virtualbox
+wait $process_id
+echo -e "\033[42m\033-----------> Virtual Box - Success"
