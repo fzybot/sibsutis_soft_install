@@ -62,7 +62,7 @@ echo -e "\033[42m\033-----------> Libre Office Installation"
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo apt-get update
 wait $process_id
-sudo apt-get -y install libreoffice
+sudo apt-get -y install libreoffice libreoffice-l10n-ru
 wait $process_id
 echo -e "\033[42m\033-----------> Libre Office Installation - Success"
 
